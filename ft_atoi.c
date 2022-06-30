@@ -6,16 +6,17 @@
 /*   By: psegura- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/15 16:14:56 by psegura-          #+#    #+#             */
-/*   Updated: 2022/06/15 17:16:03 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/06/24 17:53:52 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
+#include <limits.h>
 
 int	ft_atoi(const char *str)
 {
-	int	i;
-	int	dest;
-	int	sign;
+	int				i;
+	long long int	dest;
+	int				sign;
 
 	i = 0;
 	dest = 0;
@@ -39,3 +40,11 @@ int	ft_atoi(const char *str)
 	}
 	return (dest * sign);
 }
+/*
+int	main(void)
+{
+	char n[40] = "-99999999999999999999999999";
+	
+	printf("%d", ft_atoi(n));
+}
+*/

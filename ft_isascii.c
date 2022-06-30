@@ -6,14 +6,14 @@
 /*   By: psegura- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/13 16:46:43 by psegura-          #+#    #+#             */
-/*   Updated: 2022/06/13 17:05:52 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/06/23 14:39:17 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-int	ft_isascii(unsigned char str)
+int	ft_isascii(int c)
 {
-	if (str >= 0 && str <= 127)
+	if (c >= 0 && c <= 127)
 		return (1);
 	return (0);
 }

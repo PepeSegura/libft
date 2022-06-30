@@ -1,19 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: psegura- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/13 18:39:08 by psegura-          #+#    #+#             */
-/*   Updated: 2022/06/23 14:46:24 by psegura-         ###   ########.fr       */
+/*   Created: 2022/06/22 11:12:33 by psegura-          #+#    #+#             */
+/*   Updated: 2022/06/24 13:38:23 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-int	ft_tolower(int c)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	if (c >= 'A' && c <= 'Z')
-		c = c + 32;
-	return (c);
+	char			*d;
+	const char		*s;
+
+	d = dst;
+	s = src;
+	if (dst == '\0' && src == '\0')
+		return (NULL);
+	while (n > 0)
+	{
+		*d = *s;
+		d++;
+		s++;
+		n--;
+	}
+	return (dst);
 }

@@ -6,14 +6,14 @@
 /*   By: psegura- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/13 16:54:49 by psegura-          #+#    #+#             */
-/*   Updated: 2022/06/13 17:11:42 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/06/23 14:39:37 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-int	ft_isprint(unsigned char str)
+int	ft_isprint(int c)
 {
-	if (str >= 32 && str <= 126)
+	if (c >= 32 && c <= 126)
 		return (1);
 	return (0);
 }

@@ -1,39 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: psegura- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/15 21:20:25 by psegura-          #+#    #+#             */
-/*   Updated: 2022/06/27 16:01:40 by psegura-         ###   ########.fr       */
+/*   Created: 2022/06/27 16:19:07 by psegura-          #+#    #+#             */
+/*   Updated: 2022/06/28 13:43:11 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-void	ft_putnbr_fd(int n, int fd)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	long long	number;
+	char	*final;
+	size_t	i;
 
-	number = (long long)n;
-	if (number < 0)
+	final = malloc((sizeof(char) * len) + 1);
+	if (!s)
+		return (NULL);
+	if (final == NULL)
+		return (NULL);
+	i = 0;
+	if (start >= len)
 	{
-		write(fd, "-", 1);
-		number = number * -1;
+		final[0] = '\0';
+		return (final);
 	}
-	if (number > 9)
+	while (len > 0)
 	{
-		ft_putnbr_fd(number / 10, fd);
-		number = number % 10;
+		final[i] = s[start];
+		i++;
+		start++;
+		len--;
 	}
-	ft_putchar_fd(number + '0', fd);
+	final[i] = '\0';
+	return (final);
 }
 /*
 int	main(void)
 {
-	int fd;
+	char *s1 = "lorem ipsum dolor sit amet";
 
-	fd = 1;
-	ft_putnbr_fd(-2147483648LL, fd);
+	printf("%s", ft_substr(s1, 4, 200));
 }
 */

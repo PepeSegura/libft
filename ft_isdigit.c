@@ -6,12 +6,12 @@
 /*   By: psegura- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/13 11:37:49 by psegura-          #+#    #+#             */
-/*   Updated: 2022/06/16 20:30:38 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/06/23 14:36:33 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-int	ft_isdigit(unsigned char str)
+int	ft_isdigit(int c)
 {
-	return (str >= '0' && str <= '9');
+	return (c >= '0' && c <= '9');
 }

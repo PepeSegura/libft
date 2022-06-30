@@ -6,12 +6,12 @@
 /*   By: psegura- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/13 11:24:23 by psegura-          #+#    #+#             */
-/*   Updated: 2022/06/16 20:30:59 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/06/23 14:34:54 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-int	ft_isalpha(unsigned char str)
+int	ft_isalpha(int c)
 {
-	return ((str >= 'A' && str <= 'Z') || (str >= 'a' && str <= 'z'));
+	return ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'));
 }

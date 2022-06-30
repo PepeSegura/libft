@@ -1,19 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: psegura- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/13 18:39:08 by psegura-          #+#    #+#             */
-/*   Updated: 2022/06/23 14:46:24 by psegura-         ###   ########.fr       */
+/*   Created: 2022/06/22 11:38:57 by psegura-          #+#    #+#             */
+/*   Updated: 2022/06/24 13:38:50 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-int	ft_tolower(int c)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	if (c >= 'A' && c <= 'Z')
-		c = c + 32;
-	return (c);
+	char			*d;
+	const char		*s;
+	char			*lastd;
+	const char		*lasts;
+
+	d = dst;
+	s = src;
+	lasts = s + (len - 1);
+	lastd = d + (len - 1);
+	if (dst == '\0' && src == '\0')
+		return (NULL);
+	if (d < s)
+	{
+		while (len--)
+			*d++ = *s++;
+	}
+	else
+	{
+		while (len--)
+			*lastd-- = *lasts--;
+	}
+	return (dst);
 }

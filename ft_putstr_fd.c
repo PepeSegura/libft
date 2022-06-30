@@ -6,12 +6,13 @@
 /*   By: psegura- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/15 17:26:33 by psegura-          #+#    #+#             */
-/*   Updated: 2022/06/15 18:05:56 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/06/28 13:44:55 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	write(fd, s, ft_strlen(s));
+	if (s != NULL)
+		write(fd, s, ft_strlen(s));
 }
