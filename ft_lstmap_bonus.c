@@ -1,28 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_lstmap_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: psegura- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/23 18:41:33 by psegura-          #+#    #+#             */
-/*   Updated: 2022/07/07 19:10:14 by psegura-         ###   ########.fr       */
+/*   Created: 2022/07/05 20:02:25 by psegura-          #+#    #+#             */
+/*   Updated: 2022/07/07 10:49:17 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	unsigned char	l;
-	int				i;
+	t_list	*final;
+	t_list	*puntero;
 
-	l = (unsigned char)c;
-	i = ft_strlen(s);
-	while (i >= 0)
+	if (!lst || !f)
+		return (NULL);
+	puntero = NULL;
+	while (lst != NULL)
 	{
-		if (s[i] == l)
-			return ((char *)&s[i]);
-		i--;
+		final = ft_lstnew(f(lst->content));
+		if (final == NULL)
+		{
+			ft_lstclear(&puntero, del);
+			return (NULL);
+		}
+		ft_lstadd_back(&puntero, final);
+		lst = lst->next;
 	}
-	return (NULL);
+	return (puntero);
 }

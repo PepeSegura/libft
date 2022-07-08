@@ -6,7 +6,7 @@
 /*   By: psegura- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/29 11:22:30 by psegura-          #+#    #+#             */
-/*   Updated: 2022/06/29 16:12:35 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/06/30 22:29:50 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -23,7 +23,7 @@ static int	ft_len(long int n)
 	}
 	while (n >= 10)
 	{
-		n = n /10;
+		n = n / 10;
 		len++;
 	}
 	return (len);
@@ -33,8 +33,8 @@ static void	*ft_savenbr(char *c, size_t digit, int len)
 {
 	while (digit > 0)
 	{
-		c[len-1] = (digit % 10) + '0';
-		digit = digit /10;
+		c[len - 1] = (digit % 10) + '0';
+		digit = digit / 10;
 		len--;
 	}
 	return (c);

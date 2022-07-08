@@ -5,43 +5,44 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: psegura- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/27 16:19:07 by psegura-          #+#    #+#             */
-/*   Updated: 2022/06/28 13:43:11 by psegura-         ###   ########.fr       */
+/*   Created: 2022/07/05 01:18:26 by psegura-          #+#    #+#             */
+/*   Updated: 2022/07/05 01:19:29 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
+
+static int	ft_min(int a, int b)
+{
+	if (a < b)
+		return (a);
+	return (b);
+}
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char	*final;
+	char	*str;
 	size_t	i;
 
-	final = malloc((sizeof(char) * len) + 1);
-	if (!s)
-		return (NULL);
-	if (final == NULL)
-		return (NULL);
 	i = 0;
-	if (start >= len)
+	if (!s)
+		return (0);
+	if ((size_t)ft_strlen(s) < start)
 	{
-		final[0] = '\0';
-		return (final);
+		str = malloc(1);
+		if (!str)
+			return (0);
+		str[0] = '\0';
+		return (str);
 	}
-	while (len > 0)
+	str = (char *)malloc(ft_min(ft_strlen(s) - start, len) + 1);
+	if (!str)
+		return (0);
+	while (i < len && s[start + i])
 	{
-		final[i] = s[start];
+		str[i] = s[start + i];
 		i++;
-		start++;
-		len--;
 	}
-	final[i] = '\0';
-	return (final);
+	str[i] = '\0';
+	return (str);
 }
-/*
-int	main(void)
-{
-	char *s1 = "lorem ipsum dolor sit amet";
-
-	printf("%s", ft_substr(s1, 4, 200));
-}
-*/
