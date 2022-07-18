@@ -6,7 +6,7 @@
 /*   By: psegura- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/14 16:44:42 by psegura-          #+#    #+#             */
-/*   Updated: 2022/07/08 13:08:03 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/07/05 20:25:12 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ typedef struct s_list
 	void			*content;
 	struct s_list	*next;
 }	t_list;
-//Parte 1 - Funciones de libc
+
 int			ft_isalpha(int c);
 int			ft_isdigit(int c);
 int			ft_isalnum(int c);

@@ -6,7 +6,7 @@
 /*   By: psegura- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/15 16:14:56 by psegura-          #+#    #+#             */
-/*   Updated: 2022/06/24 17:53:52 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/07/15 13:00:35 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -43,8 +43,9 @@ int	ft_atoi(const char *str)
 /*
 int	main(void)
 {
-	char n[40] = "-99999999999999999999999999";
+	char n[40] = "9999999999999999998";
 	
-	printf("%d", ft_atoi(n));
+	printf("%d\n", ft_atoi(n));
+	printf("%d", atoi(n));
 }
 */
