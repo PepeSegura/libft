@@ -13,16 +13,13 @@
 #include "libft.h"
 
 /**
- * If the integer passed to the function is between 0 and 127, return 1, 
- * otherwise return 0
+ * It checks if the character is printable.
  * 
  * @param c The character to be checked.
  * 
- * @return 1 if c is between 0 and 127, 0 otherwise. 
+ * @return 1 if c is a printable character, 0 otherwise.
  */
-int	ft_isascii(int c)
+int	ft_isprint(int c)
 {
-	if (c >= 0 && c <= 127)
-		return (1);
-	return (0);
+	return (c >= 32 && c <= 126);
 }

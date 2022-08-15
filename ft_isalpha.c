@@ -13,8 +13,7 @@
 #include "libft.h"
 
 /**
- * If the character is between 'A' and 'Z' or between 'a' and 'z', return 1,
- * otherwise return 0
+ * It checks if the character is alphabetic.
  * 
  * @param c The character to be checked.
  * 
