@@ -6,7 +6,7 @@
 /*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/13 11:37:49 by psegura-          #+#    #+#             */
-/*   Updated: 2022/08/15 02:18:52 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:54:34 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
  * 
  * @param c The character to be checked.
  * 
- * @return a non-zero value if c is a digit (0 through 9), and zero if not.
+ * @return a non-zero value if c is a digit (0 through 9), and zero if not. 
  */
 int	ft_isdigit(int c)
 {

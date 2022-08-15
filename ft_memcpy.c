@@ -6,7 +6,7 @@
 /*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/22 11:12:33 by psegura-          #+#    #+#             */
-/*   Updated: 2022/08/15 02:39:47 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:55:09 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
  * @param src The source string.
  * @param n The number of bytes to copy.
  * 
- * @return The address of the destination string.
+ * @return The address of the destination string. 
  */
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {

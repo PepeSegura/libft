@@ -6,7 +6,7 @@
 /*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/27 22:56:56 by psegura-          #+#    #+#             */
-/*   Updated: 2022/08/15 02:44:12 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:56:21 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
  * @param s1 The string to be trimmed.
  * @param set The characters to be trimmed from the string.
  * 
- * @return A pointer to a new string.
+ * @return A pointer to a new string. 
  */
 char	*ft_strtrim(char const *s1, char const *set)
 {

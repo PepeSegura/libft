@@ -6,7 +6,7 @@
 /*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/27 22:58:49 by psegura-          #+#    #+#             */
-/*   Updated: 2022/08/15 02:40:04 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:55:31 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
  * @param s The string to be split.
  * @param c the character to split the string by
  * 
- * @return The length of the word.
+ * @return The length of the word. 
  */
 static int	ft_lword(char const *s, char c)
 {

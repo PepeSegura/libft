@@ -6,7 +6,7 @@
 /*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/13 17:35:10 by psegura-          #+#    #+#             */
-/*   Updated: 2022/08/15 02:29:35 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:56:06 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
  * 
  * @param str This is the string that we want to find the length of.
  * 
- * @return The length of the string.
+ * @return The length of the string. 
  */
 int	ft_strlen(const char *str)
 {

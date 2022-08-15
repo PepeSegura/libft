@@ -6,7 +6,7 @@
 /*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 20:01:17 by psegura-          #+#    #+#             */
-/*   Updated: 2022/08/15 02:21:03 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:54:52 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
  * @param lst A pointer to the first element of a linked list.
  * @param f The function that will be applied to each element of the list.
  * 
- * @return Nothing.
+ * @return Nothing. 
  */
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {

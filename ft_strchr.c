@@ -6,14 +6,14 @@
 /*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/13 23:11:37 by psegura-          #+#    #+#             */
-/*   Updated: 2022/08/15 02:41:04 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:55:36 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * The function ft_strchr() locates the first occurrence of c
+ * The function ft_strchr() locates the first occurrence of c 
  * (converted to a char) in the string pointed to by s
  * 
  * @param s The string to search.

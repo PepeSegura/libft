@@ -6,7 +6,7 @@
 /*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 20:02:25 by psegura-          #+#    #+#             */
-/*   Updated: 2022/08/15 02:22:10 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:54:57 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
  * void pointer
  * @param del a function that frees the memory of the content of a link.
  * 
- * @return A pointer to the first element of the new list.
+ * @return A pointer to the first element of the new list. 
  */
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {

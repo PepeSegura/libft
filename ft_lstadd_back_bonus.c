@@ -6,7 +6,7 @@
 /*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 16:04:42 by psegura-          #+#    #+#             */
-/*   Updated: 2022/08/15 02:19:36 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:54:43 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
  * @param lst A pointer to the first link of a list.
  * @param new the new element to add to the list
  * 
- * @return The last element of the list.
+ * @return The last element of the list. 
  */
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {

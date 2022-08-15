@@ -6,7 +6,7 @@
 /*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/13 16:54:49 by psegura-          #+#    #+#             */
-/*   Updated: 2022/08/15 02:18:49 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:54:37 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
  * 
  * @param c The character to be checked.
  * 
- * @return 1 if c is printable, 0 if not.
+ * @return 1 if c is printable, 0 if not. 
  */
 int	ft_isprint(int c)
 {

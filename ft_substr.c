@@ -6,7 +6,7 @@
 /*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 01:18:26 by psegura-          #+#    #+#             */
-/*   Updated: 2022/08/15 02:44:26 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:56:24 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ static int	ft_min(int a, int b)
  * @param start the index of the first character to include in the substring.
  * @param len the maximum number of characters to copy
  * 
- * @return A pointer to a new string.
+ * @return A pointer to a new string. 
  */
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

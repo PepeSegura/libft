@@ -6,7 +6,7 @@
 /*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 18:41:33 by psegura-          #+#    #+#             */
-/*   Updated: 2022/08/15 02:40:33 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:56:19 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 /**
  * It returns a pointer to the last occurrence of the character c in the
- * string s.
+ * string s. 
  * 
  * @param s The string to search.
  * @param c The character to search for.

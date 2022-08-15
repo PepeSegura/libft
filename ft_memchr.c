@@ -6,7 +6,7 @@
 /*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/24 17:07:00 by psegura-          #+#    #+#             */
-/*   Updated: 2022/08/15 02:23:45 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:55:04 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
  * @param n The number of bytes to be checked.
  * 
  * @return a pointer to the first occurrence of the character c in the first n
- * bytes of the string pointed to, by the argument s.
+ * bytes of the string pointed to, by the argument s. 
  */
 void	*ft_memchr(const void *s, int c, size_t n)
 {

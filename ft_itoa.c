@@ -6,7 +6,7 @@
 /*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/29 11:22:30 by psegura-          #+#    #+#             */
-/*   Updated: 2022/08/15 02:18:46 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:54:40 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
  * 
  * @param n the number to be converted
  * 
- * @return The length of the number.
+ * @return The length of the number. 
  */
 static int	ft_len(long int n)
 {

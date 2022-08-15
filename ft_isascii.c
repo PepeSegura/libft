@@ -6,7 +6,7 @@
 /*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/13 16:46:43 by psegura-          #+#    #+#             */
-/*   Updated: 2022/08/15 02:19:00 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:54:30 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
  * 
  * @param c The character to be checked.
  * 
- * @return 1 if c is between 0 and 127, 0 otherwise.
+ * @return 1 if c is between 0 and 127, 0 otherwise. 
  */
 int	ft_isascii(int c)
 {

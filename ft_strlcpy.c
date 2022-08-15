@@ -6,7 +6,7 @@
 /*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/14 15:17:55 by psegura-          #+#    #+#             */
-/*   Updated: 2022/08/15 02:29:19 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:55:51 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
  * Copy the string pointed to by src, including the terminating null byte ('\0'),
  * to the buffer pointed to by dest. The strings may not overlap, and the
  * destination string dest must be large enough to receive the copy. Beware of
- * buffer overruns! (See BUGS.)
+ * buffer overruns! (See BUGS.) 
  * 
  * @param dest This is the destination string.
  * @param src The string to be copied.

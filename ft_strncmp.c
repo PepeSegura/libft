@@ -6,7 +6,7 @@
 /*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 19:22:30 by psegura-          #+#    #+#             */
-/*   Updated: 2022/08/15 02:43:24 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:56:12 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
  * @param n The maximum number of characters to compare.
  * 
  * @return The difference between the first two characters that differ in the
- * strings being compared.
+ * strings being compared. 
  */
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

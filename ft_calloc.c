@@ -6,7 +6,7 @@
 /*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/27 12:19:24 by psegura-          #+#    #+#             */
-/*   Updated: 2022/08/15 02:19:07 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:54:23 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
  * @param count The number of elements to be allocated.
  * @param size The size of the memory block, in bytes.
  * 
- * @return A pointer to a memory block of size count * size.
+ * @return A pointer to a memory block of size count * size. 
  */
 void	*ft_calloc(size_t count, size_t size)
 {

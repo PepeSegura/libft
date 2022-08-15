@@ -6,7 +6,7 @@
 /*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/13 11:51:19 by psegura-          #+#    #+#             */
-/*   Updated: 2022/08/15 02:19:04 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:54:26 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
  * 
  * @param c The character to be checked.
  * 
- * @return 1 if the character is alphanumeric, 0 if not.
+ * @return 1 if the character is alphanumeric, 0 if not. 
  */
 int	ft_isalnum(int c)
 {

@@ -6,7 +6,7 @@
 /*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/27 13:15:45 by psegura-          #+#    #+#             */
-/*   Updated: 2022/08/15 02:42:05 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:55:45 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
  * @param s2 The string to be appended to the end of s1.
  * 
  * @return A pointer to a new string that is the result of the concatenation
- * of s1 and s2.
+ * of s1 and s2. 
  */
 char	*ft_strjoin(char const *s1, char const *s2)
 {

@@ -6,7 +6,7 @@
 /*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/27 17:36:40 by psegura-          #+#    #+#             */
-/*   Updated: 2022/08/15 02:43:09 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:56:09 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
  * @param f The function that will be applied to each character of s.
  * 
  * @return A pointer to a new string, which is the result of applying
- * the function f to each character of the string given as argument.
+ * the function f to each character of the string given as argument. 
  */
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

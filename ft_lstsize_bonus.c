@@ -6,7 +6,7 @@
 /*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 15:59:19 by psegura-          #+#    #+#             */
-/*   Updated: 2022/08/15 02:23:25 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:55:01 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
  * 
  * @param lst A pointer to the first element of a linked list.
  * 
- * @return The size of the list.
+ * @return The size of the list. 
  */
 int	ft_lstsize(t_list *lst)
 {

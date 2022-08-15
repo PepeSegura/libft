@@ -6,7 +6,7 @@
 /*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/15 18:08:33 by psegura-          #+#    #+#             */
-/*   Updated: 2022/08/15 02:25:53 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:55:20 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
  * Write the string s to the file descriptor fd, followed by a newline
  * 
  * @param s The string to output.
- * @param fd file descriptor
+ * @param fd file descriptor 
  */
 void	ft_putendl_fd(char *s, int fd)
 {

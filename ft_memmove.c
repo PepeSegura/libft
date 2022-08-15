@@ -6,7 +6,7 @@
 /*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/22 11:38:57 by psegura-          #+#    #+#             */
-/*   Updated: 2022/08/15 02:25:26 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:55:11 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
  * @param src The source string.
  * @param len the number of bytes to copy
  * 
- * @return A pointer to the destination string.
+ * @return A pointer to the destination string. 
  */
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {

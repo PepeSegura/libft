@@ -6,7 +6,7 @@
 /*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/25 23:42:12 by psegura-          #+#    #+#             */
-/*   Updated: 2022/08/15 02:41:50 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:55:39 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
  * @param s1 The string to be copied.
  * 
  * @return A pointer to a newly allocated space in memory, which contains a
- * copy of the string given as argument.
+ * copy of the string given as argument. 
  */
 char	*ft_strdup(const char *s1)
 {

@@ -6,7 +6,7 @@
 /*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/24 17:28:42 by psegura-          #+#    #+#             */
-/*   Updated: 2022/08/15 02:24:00 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:55:07 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
  * @param s2 The string to be compared.
  * @param n The number of bytes to compare.
  * 
- * @return The difference between the first two different characters.
+ * @return The difference between the first two different characters. 
  */
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

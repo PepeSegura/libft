@@ -6,7 +6,7 @@
 /*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/28 00:12:34 by psegura-          #+#    #+#             */
-/*   Updated: 2022/08/15 02:23:09 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:54:59 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
  * 
  * @param content the content of the new element
  * 
- * @return A pointer to a new list element.
+ * @return A pointer to a new list element. 
  */
 t_list	*ft_lstnew(void *content)
 {

@@ -6,7 +6,7 @@
 /*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/15 21:20:25 by psegura-          #+#    #+#             */
-/*   Updated: 2022/08/15 02:26:16 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:55:22 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
  * Write the number n to the file descriptor fd
  * 
  * @param n The number to be printed.
- * @param fd The file descriptor of the file to write to.
+ * @param fd The file descriptor of the file to write to. 
  */
 void	ft_putnbr_fd(int n, int fd)
 {

@@ -6,7 +6,7 @@
 /*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/14 18:12:17 by psegura-          #+#    #+#             */
-/*   Updated: 2022/08/15 02:19:09 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:54:20 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
  * and sets the memory area to zero
  * 
  * @param s This is the pointer to the memory area to be filled.
- * @param n The number of bytes to be set to zero.
+ * @param n The number of bytes to be set to zero. 
  */
 void	ft_bzero(void *s, size_t n)
 {

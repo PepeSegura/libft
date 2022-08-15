@@ -6,7 +6,7 @@
 /*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/13 11:24:23 by psegura-          #+#    #+#             */
-/*   Updated: 2022/08/15 02:19:02 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:54:28 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
  * 
  * @param c The character to be checked.
  * 
- * @return 1 if the character is alphabetic, 0 otherwise.
+ * @return 1 if the character is alphabetic, 0 otherwise. 
  */
 int	ft_isalpha(int c)
 {

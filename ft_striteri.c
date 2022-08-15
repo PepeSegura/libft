@@ -6,7 +6,7 @@
 /*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/27 18:49:36 by psegura-          #+#    #+#             */
-/*   Updated: 2022/08/15 02:28:04 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:55:42 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
  * function f
  * 
  * @param s The string to iterate through
- * @param f The function that will be applied to each character of the string.
+ * @param f The function that will be applied to each character of the string. 
  */
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
