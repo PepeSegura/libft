@@ -3,14 +3,25 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: psegura- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/22 11:12:33 by psegura-          #+#    #+#             */
-/*   Updated: 2022/06/24 13:38:23 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:39:47 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
+/**
+ * Copy n bytes from memory area src to memory area dst
+ * 
+ * @param dst This is the pointer to the destination array where the content is
+ * to be copied, type-casted to a pointer of type void*.
+ * @param src The source string.
+ * @param n The number of bytes to copy.
+ * 
+ * @return The address of the destination string.
+ */
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	char			*d;

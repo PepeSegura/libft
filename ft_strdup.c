@@ -3,14 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: psegura- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/25 23:42:12 by psegura-          #+#    #+#             */
-/*   Updated: 2022/06/26 16:41:36 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:41:50 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
+/**
+ * It copies the string s1 into a new string s2, and returns a pointer to s2
+ * 
+ * @param s1 The string to be copied.
+ * 
+ * @return A pointer to a newly allocated space in memory, which contains a
+ * copy of the string given as argument.
+ */
 char	*ft_strdup(const char *s1)
 {
 	size_t	size;

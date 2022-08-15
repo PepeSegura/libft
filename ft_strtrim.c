@@ -3,14 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: psegura- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/27 22:56:56 by psegura-          #+#    #+#             */
-/*   Updated: 2022/06/30 22:27:53 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:44:12 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
+/**
+ * It copies the string s1 into a new string, but without the characters
+ * in set at the beginning and end of s1
+ * 
+ * @param s1 The string to be trimmed.
+ * @param set The characters to be trimmed from the string.
+ * 
+ * @return A pointer to a new string.
+ */
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*final;
@@ -33,16 +43,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	}
 	return (final);
 }
-/*
-int	main(int argc, char **argv)
-{
-	char	*s1;
-	char	*set;
-
-	s1 = argv[1];
-	set = argv[2];
-	if (argc == 3)
-		printf("%s\n", ft_strtrim(s1, set));
-	return (0);
-}
-*/

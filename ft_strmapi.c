@@ -3,14 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: psegura- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/27 17:36:40 by psegura-          #+#    #+#             */
-/*   Updated: 2022/06/27 18:02:41 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:43:09 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
+/**
+ * It takes a string and a function, and returns a new string where each
+ * character is the result of the function applied to the corresponding
+ * character of the original string
+ * 
+ * @param s The string to be mapped.
+ * @param f The function that will be applied to each character of s.
+ * 
+ * @return A pointer to a new string, which is the result of applying
+ * the function f to each character of the string given as argument.
+ */
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char	*final;

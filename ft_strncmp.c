@@ -3,14 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: psegura- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 19:22:30 by psegura-          #+#    #+#             */
-/*   Updated: 2022/06/24 17:05:48 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:43:24 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
+/**
+ * The function ft_strncmp() compares the first n characters of the strings
+ * s1 and s2
+ * 
+ * @param s1 The first string to be compared.
+ * @param s2 The string to compare to.
+ * @param n The maximum number of characters to compare.
+ * 
+ * @return The difference between the first two characters that differ in the
+ * strings being compared.
+ */
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t			i;
@@ -25,13 +37,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
-/*
-int	main(int argc, char **argv)
-{
-	char *s1 = argv[1];
-	char *s2 = argv[2];
-
-	printf("\200" );
-	printf("%d", ft_strncmp(s1, s2, 4));
-}
-*/

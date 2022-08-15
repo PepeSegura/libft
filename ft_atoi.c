@@ -3,15 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: psegura- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/15 16:14:56 by psegura-          #+#    #+#             */
-/*   Updated: 2022/07/15 13:00:35 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:19:12 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 #include <limits.h>
 
+/**
+ * It takes a string, and returns an integer
+ * 
+ * @param str The string to be converted.
+ * 
+ * @return the integer value of the string passed as argument.
+ */
 int	ft_atoi(const char *str)
 {
 	int				i;
@@ -40,12 +48,3 @@ int	ft_atoi(const char *str)
 	}
 	return (dest * sign);
 }
-/*
-int	main(void)
-{
-	char n[40] = "9999999999999999998";
-	
-	printf("%d\n", ft_atoi(n));
-	printf("%d", atoi(n));
-}
-*/

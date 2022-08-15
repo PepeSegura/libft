@@ -3,15 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: psegura- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 01:18:26 by psegura-          #+#    #+#             */
-/*   Updated: 2022/07/05 01:19:29 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:44:26 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * It returns the minimum of two integers
+ * 
+ * @param a the first number
+ * @param b the number of bytes to read
+ * 
+ * @return The minimum of two integers.
+ */
 static int	ft_min(int a, int b)
 {
 	if (a < b)
@@ -19,6 +27,16 @@ static int	ft_min(int a, int b)
 	return (b);
 }
 
+/**
+ * If the string is shorter than the start index, return an empty string,
+ * otherwise return a string of length len starting at index start.
+ * 
+ * @param s The string to be split.
+ * @param start the index of the first character to include in the substring.
+ * @param len the maximum number of characters to copy
+ * 
+ * @return A pointer to a new string.
+ */
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*str;

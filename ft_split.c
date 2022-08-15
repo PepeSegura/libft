@@ -6,12 +6,20 @@
 /*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/27 22:58:49 by psegura-          #+#    #+#             */
-/*   Updated: 2022/07/19 00:54:17 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:40:04 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * This function returns the length of the first word in a string
+ * 
+ * @param s The string to be split.
+ * @param c the character to split the string by
+ * 
+ * @return The length of the word.
+ */
 static int	ft_lword(char const *s, char c)
 {
 	int	i;
@@ -22,6 +30,14 @@ static int	ft_lword(char const *s, char c)
 	return (i);
 }
 
+/**
+ * It counts the number of words in a string
+ * 
+ * @param s The string to be split.
+ * @param c the character to be used as a delimiter
+ * 
+ * @return The number of words in the string.
+ */
 static int	ft_cword(char const *s, char c)
 {
 	int	i;
@@ -41,6 +57,14 @@ static int	ft_cword(char const *s, char c)
 	return (cont);
 }
 
+/**
+ * It frees the memory allocated for the matrix
+ * 
+ * @param matrix the matrix to be freed
+ * @param pos the position of the matrix that we want to free
+ * 
+ * @return A pointer to a pointer to a char.
+ */
 static char	**ft_free(char **matrix, int pos)
 {
 	while (pos >= 0)
@@ -52,6 +76,16 @@ static char	**ft_free(char **matrix, int pos)
 	return (NULL);
 }
 
+/**
+ * It splits a string into an array of strings, using a given character as a
+ * delimiter
+ * 
+ * @param s The string to be split.
+ * @param c the character to split the string by
+ * 
+ * @return A pointer to a newly allocated space in memory which contains a copy
+ * of the string given as argument.
+ */
 char	**ft_split(char const *s, char c)
 {
 	char	**matrix;

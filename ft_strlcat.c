@@ -3,14 +3,27 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: psegura- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/17 13:15:37 by psegura-          #+#    #+#             */
-/*   Updated: 2022/06/23 18:08:27 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:42:31 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
+/**
+ * The function ft_strlcat() appends the null-terminated string src to
+ * the end of dst. 
+ * It will append at most dstsize - strlen(dst) - 1 bytes, NUL-terminating the
+ * result
+ * 
+ * @param dst The destination string.
+ * @param src The string to be appended.
+ * @param dstsize The size of the destination buffer.
+ * 
+ * @return The total length of the string it tried to create.
+ */
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t	i;

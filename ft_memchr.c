@@ -3,14 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: psegura- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/24 17:07:00 by psegura-          #+#    #+#             */
-/*   Updated: 2022/07/07 20:21:28 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:23:45 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
+/**
+ * It iterates through the first n bytes of the memory area pointed to by s, and
+ * returns a pointer to the first byte that matches the value of c
+ * 
+ * @param s The memory area to be searched.
+ * @param c The character to search for.
+ * @param n The number of bytes to be checked.
+ * 
+ * @return a pointer to the first occurrence of the character c in the first n
+ * bytes of the string pointed to, by the argument s.
+ */
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	size_t			i;
@@ -28,11 +40,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (0);
 }
-/*
-int	main(void)
-{
-	char str[] = "bonjour";
-	printf("%s", ft_memchr(str, 0, 1));
-	printf("\n%s", memchr(str, 0, 1));
-	return (0);
-}*/

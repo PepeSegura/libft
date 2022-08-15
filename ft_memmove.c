@@ -3,14 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: psegura- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/22 11:38:57 by psegura-          #+#    #+#             */
-/*   Updated: 2022/06/24 13:38:50 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:25:26 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
+/**
+ * If the destination is less than the source, copy the source to the 
+ * destination, otherwise copy the source to the destination in reverse
+ * 
+ * @param dst This is the pointer to the destination array where the content is
+ * to be copied, type-casted to a void*.
+ * @param src The source string.
+ * @param len the number of bytes to copy
+ * 
+ * @return A pointer to the destination string.
+ */
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	char			*d;

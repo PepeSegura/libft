@@ -3,14 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: psegura- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/24 21:13:35 by psegura-          #+#    #+#             */
-/*   Updated: 2022/06/25 19:53:25 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:43:53 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
+/**
+ * If the first character of needle is found in haystack, then check if
+ * the rest of needle is found in haystack starting at the same position
+ * 
+ * @param haystack The string to search in
+ * @param needle the string to find
+ * @param len the maximum number of characters to search
+ * 
+ * @return A pointer to the first occurrence of the substring needle
+ * in the string haystack.
+ */
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	size_t	pos;

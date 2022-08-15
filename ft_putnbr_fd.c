@@ -3,14 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: psegura- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/15 21:20:25 by psegura-          #+#    #+#             */
-/*   Updated: 2022/06/27 16:01:40 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:26:16 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
+/**
+ * Write the number n to the file descriptor fd
+ * 
+ * @param n The number to be printed.
+ * @param fd The file descriptor of the file to write to.
+ */
 void	ft_putnbr_fd(int n, int fd)
 {
 	long long	number;
@@ -28,12 +35,3 @@ void	ft_putnbr_fd(int n, int fd)
 	}
 	ft_putchar_fd(number + '0', fd);
 }
-/*
-int	main(void)
-{
-	int fd;
-
-	fd = 1;
-	ft_putnbr_fd(-2147483648LL, fd);
-}
-*/

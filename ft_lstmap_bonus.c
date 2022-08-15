@@ -3,14 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: psegura- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 20:02:25 by psegura-          #+#    #+#             */
-/*   Updated: 2022/07/07 10:49:17 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/08/15 02:22:10 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
+/**
+ * It takes a list, applies a function to each element of the list, and returns 
+ * a new list with the results of the function
+ * 
+ * @param lst A pointer to the first element of a linked list.
+ * @param f a pointer to a function that takes a void pointer and returns a
+ * void pointer
+ * @param del a function that frees the memory of the content of a link.
+ * 
+ * @return A pointer to the first element of the new list.
+ */
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*final;
