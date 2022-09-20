@@ -21,17 +21,13 @@
  */
 int	ft_lstsize(t_list *lst)
 {
-	int	size;
+	int	i;
 
-	size = 0;
-	if (lst != NULL)
+	i = 0;
+	while (lst != NULL)
 	{
-		while (lst->next != NULL)
-		{
-			lst = lst->next;
-			size++;
-		}
-		size++;
+		lst = lst->next;
+		i++;
 	}
-	return (size);
+	return (i);
 }
