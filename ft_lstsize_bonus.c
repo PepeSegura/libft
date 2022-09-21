@@ -6,7 +6,7 @@
 /*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 15:59:19 by psegura-          #+#    #+#             */
-/*   Updated: 2022/08/15 02:55:01 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/09/21 11:56:36 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,17 +21,13 @@
  */
 int	ft_lstsize(t_list *lst)
 {
-	int	size;
+	int	i;
 
-	size = 0;
-	if (lst != NULL)
+	i = 0;
+	while (lst != NULL)
 	{
-		while (lst->next != NULL)
-		{
-			lst = lst->next;
-			size++;
-		}
-		size++;
+		lst = lst->next;
+		i++;
 	}
-	return (size);
+	return (i);
 }
