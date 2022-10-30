@@ -6,7 +6,7 @@
 /*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/07 18:54:26 by psegura-          #+#    #+#             */
-/*   Updated: 2022/10/30 22:43:30 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/10/30 23:07:00 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,6 +88,13 @@ char	*ft_clean_stash(char *stash)
 	return (temp);
 }
 
+/**
+ * Reads a line from a file descriptor, without the newline, and returns it
+ * 
+ * @param fd the file descriptor of the file to read from
+ * 
+ * @return A line of text from a file descriptor.
+ */
 char	*get_next_line(int fd)
 {
 	static char	*stash[OPEN_MAX];
