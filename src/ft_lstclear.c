@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <libft.h>
 
 /**
  * It takes a pointer to a pointer to a linked list, and a pointer to a function

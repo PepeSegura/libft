@@ -6,11 +6,11 @@
 /*   By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/15 16:14:56 by psegura-          #+#    #+#             */
-/*   Updated: 2022/10/30 23:07:52 by psegura-         ###   ########.fr       */
+/*   Updated: 2022/10/31 01:01:11 by psegura-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <libft.h>
 #include <limits.h>
 
 /**
