@@ -6,7 +6,7 @@
 #    By: psegura- <psegura-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/14 20:21:59 by psegura-          #+#    #+#              #
-#    Updated: 2022/10/30 22:58:45 by psegura-         ###   ########.fr        #
+#    Updated: 2022/11/28 17:16:02 by psegura-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,6 +16,7 @@ RESET	=	\033c
 GREEN	=	\033[1;32m
 RED		=	\033[0;31m
 CYAN	=	\033[0;36m
+WHITE	=	\033[0m
 
 ### Compiler info###
 
@@ -52,6 +53,7 @@ SRCS_NAME = 						\
 			ft_memmove.c			\
 			ft_memchr.c				\
 			ft_memcmp.c				\
+			ft_free_matrix.c		\
 									\
 			ft_bzero.c				\
 			ft_calloc.c				\
